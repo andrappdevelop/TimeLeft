@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/enterAgeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_small"
+        android:text="@string/enter_current_age"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/inputAgeInputEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_small"
+        android:hint="@string/input_age"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@id/enterAgeTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/enterAgeTextView"
+        app:layout_constraintTop_toTopOf="@id/enterAgeTextView" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_small"
+        android:text="@string/save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/chooseSexTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_small"
+        android:text="@string/choose_sex"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/enterAgeTextView" />
+
+    <TextView
+        android:id="@+id/maleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/male"
+        app:layout_constraintBottom_toBottomOf="@id/chooseSexTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toEndOf="@id/chooseSexTextView"
+        app:layout_constraintTop_toTopOf="@id/chooseSexTextView" />
+
+    <TextView
+        android:id="@+id/femaleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/female"
+        app:layout_constraintBottom_toBottomOf="@id/chooseSexTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toEndOf="@+id/maleTextView"
+        app:layout_constraintTop_toTopOf="@id/chooseSexTextView" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/sexSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/maleTextView"
+        app:layout_constraintEnd_toStartOf="@+id/femaleTextView"
+        app:layout_constraintStart_toEndOf="@+id/maleTextView"
+        app:layout_constraintTop_toTopOf="@+id/maleTextView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

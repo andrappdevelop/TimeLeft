@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">TimeLeft</string>
+    <string name="settings">Settings</string>
+    <string name="enter_current_age">Enter current age:</string>
+    <string name="save">Save</string>
+    <string name="choose_sex">Choose sex:</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="input_age">input age</string>
 </resources>
